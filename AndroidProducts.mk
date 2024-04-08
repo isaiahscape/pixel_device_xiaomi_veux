@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/halcyon_veux.mk
+    $(LOCAL_DIR)/aosp_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    halcyon_veux-user \
-    halcyon_veux-userdebug \
-    halcyon_veux-eng
+    aosp_veux-user \
+    aosp_veux-userdebug \
+    aosp_veux-eng
