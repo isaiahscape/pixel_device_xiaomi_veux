@@ -11,16 +11,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-USE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+USE_PIXEL_CHARGER := true
+
+# Cherish-ified
+CHERISH_BUILD_TYPE := UNOFFICIAL
+CHERISH_MAINTAINER := isaiahscape
+CHERISH_CHIPSET := Snapdragon 695 5G
+CHERISH_BATTERY := 5000mAh
+CHERISH_DISPLAY := 1080x2400
 
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := veux
