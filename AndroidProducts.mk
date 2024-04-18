@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_veux.mk
+    $(LOCAL_DIR)/aosp_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    yaap_veux-user \
-    yaap_veux-userdebug \
-    yaap_veux-eng
+    aosp_veux-user \
+    aosp_veux-userdebug \
+    aosp_veux-eng
